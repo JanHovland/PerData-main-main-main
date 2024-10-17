@@ -424,3 +424,15 @@
 /* No comment provided by engineer. */
 "ZipCode" = "Postnummer";
 
+/* No comment provided by engineer. */
+"Gender" = "Kjønn";
+
+/* No comment provided by engineer. */
+"Dead" = "Død";
+
+/* No comment provided by engineer. */
+"Yes" = "Ja";
+
+/* No comment provided by engineer. */
+"No" = "Nei";
+

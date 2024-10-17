@@ -119,7 +119,8 @@ struct toDoView: View {
      35. 🟢 Oversikt fødselsdager.
      36. 🟢 Rettet feil med søking på personer og brukere.
      37. 🔴 Se om sending av e-post kan gjøres på SwiftUI vis. (Ikke mer fokus på dette!)
-     38. 🔴 .
+     38. 🔴 Ser ut som oppdatering av Person lager et duplikat
+     39. 🔴 .
 
     """
     

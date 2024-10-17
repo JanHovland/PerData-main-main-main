@@ -148,7 +148,7 @@ struct CloudKitPerson {
                     person.dateMonthDay = dateMonthDay as! String
                     person.gender = gender as! Int
                     person.image = nil
-                    person.dead = person.dead = dead as! Int
+                    person.dead = dead as! Int
                 }
                 
                 char = String(person.firstName.prefix(1))

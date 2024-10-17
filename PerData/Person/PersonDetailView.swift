@@ -20,10 +20,11 @@ struct PersonDetailView: View {
         VStack (alignment: .leading) {
             HStack {
                 
-                if 
-                Image("dead")
-                    .resizable()
-                    .frame(width: 12, height: 34, alignment: .center)
+                if person.dead > 0 {
+                    Image("dead")
+                        .resizable()
+                        .frame(width: 12, height: 34, alignment: .center)
+                }
                 
                 if person.image != nil {
                     Image(uiImage: person.image!)

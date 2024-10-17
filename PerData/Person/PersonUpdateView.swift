@@ -27,9 +27,17 @@ struct PersonUpdateView: View {
     @State private var showSheetFindZipCode = false
     @State private var showImage = false
     @State private var recordID: CKRecord.ID?
+    struct Dead: Hashable, Identifiable {
+        var id = UUID()
+        var isDead = false
+        var name = ""
+    }
     
     var genders = [String(localized: "Man"),
                    String(localized: "Woman")]
+    
+    var death = [String(localized: "No"),
+                 String(localized: "Yes")]
     
     var body: some View {
         VStack {
@@ -66,27 +74,35 @@ struct PersonUpdateView: View {
                 .sheet(isPresented: $showImage, content: {
                     ImagePicker(sourceType: .photoLibrary, selectedImage: $image, image: $person.image)
                 })
+                
+                HStack {
+                    InputDeath(heading: String(localized: "Dead"),
+                                death: death,
+                                value: $person.dead)
+                    Spacer()
+                }
+                
                 HStack (spacing: 30) {
                     Text("FirstName")
-                    Text(person.firstName)
+                     TextField("FirstName", text: $person.firstName)
                   Spacer()
                 }
                 .padding(.bottom, 5)
                 
                 HStack (spacing: 20) {
                     Text("LastName")
-                    Text(person.lastName)
+                    TextField("LastName", text: $person.lastName)
                     Spacer()
                 }
-                                
+            
                 TextField("Email", text: $person.personEmail)
                     .keyboardType(.emailAddress)
                     .autocapitalization(.none)
                 TextField("Address", text: $person.address)
                     .autocapitalization(.words)
-                TextField("Phonenumber", text: $person.phoneNumber)
             }
             Group {
+                TextField("Phonenumber", text: $person.phoneNumber)
                 HStack (alignment: .center, spacing: 10) {
                     TextField("Citynumber", text: $person.cityNumber)
                         .keyboardType(.numberPad)
@@ -126,7 +142,7 @@ struct PersonUpdateView: View {
                     })
                     .padding(.leading, 10)
                 /// Returning an integer 0 == "Man" 1 == "Women
-                InputGender(heading: "Gender",
+                InputGender(heading: String(localized: "Gender"),
                             genders: genders,
                             value: $person.gender)
             }
@@ -137,7 +153,7 @@ struct PersonUpdateView: View {
         .navigationBarTitle("Modify person", displayMode: .inline)
         .toolbar(content: {
             ToolbarItem(placement: .navigationBarTrailing) {
-                Image(systemName: "ellipsis.circle" ) // Text("_Cho<#T##String#>ose_")
+                Image(systemName: "ellipsis.circle")
                     .foregroundColor(.accentColor)
                     .font(Font.body.weight(.regular))
                     .contextMenu {

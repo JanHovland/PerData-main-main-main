@@ -1,0 +1,109 @@
+DEFINE SCHEMA
+
+    CREATE ROLE admin;
+
+    RECORD TYPE Cabin (
+        "___createTime" TIMESTAMP QUERYABLE SORTABLE,
+        "___createdBy"  REFERENCE,
+        "___etag"       STRING,
+        "___modTime"    TIMESTAMP,
+        "___modifiedBy" REFERENCE,
+        "___recordID"   REFERENCE QUERYABLE,
+        firstName       STRING QUERYABLE SEARCHABLE SORTABLE,
+        fromDate        INT64 QUERYABLE,
+        lastName        STRING QUERYABLE SEARCHABLE SORTABLE,
+        toDate          INT64 QUERYABLE,
+        GRANT WRITE TO "_creator",
+        GRANT CREATE TO "_icloud",
+        GRANT READ TO "_world",
+        GRANT READ, CREATE, WRITE TO admin
+    );
+
+    RECORD TYPE Json (
+        "___createTime" TIMESTAMP QUERYABLE,
+        "___createdBy"  REFERENCE,
+        "___etag"       STRING,
+        "___modTime"    TIMESTAMP,
+        "___modifiedBy" REFERENCE,
+        "___recordID"   REFERENCE QUERYABLE,
+        jsaonData       ASSET,
+        GRANT WRITE TO "_creator",
+        GRANT CREATE TO "_icloud",
+        GRANT READ TO "_world",
+        GRANT READ, CREATE, WRITE TO admin
+    );
+
+    RECORD TYPE Person (
+        "___createTime"    TIMESTAMP QUERYABLE SORTABLE,
+        "___createdBy"     REFERENCE,
+        "___etag"          STRING,
+        "___modTime"       TIMESTAMP,
+        "___modifiedBy"    REFERENCE,
+        "___recordID"      REFERENCE QUERYABLE,
+        address            STRING QUERYABLE SEARCHABLE SORTABLE,
+        city               STRING QUERYABLE SEARCHABLE SORTABLE,
+        cityNumber         STRING QUERYABLE SEARCHABLE SORTABLE,
+        dateMonthDay       STRING QUERYABLE SEARCHABLE SORTABLE,
+        dateOfBirth        TIMESTAMP QUERYABLE SORTABLE,
+        firstName          STRING QUERYABLE SEARCHABLE SORTABLE,
+        gender             INT64 QUERYABLE SORTABLE,
+        image              ASSET,
+        lastName           STRING QUERYABLE SEARCHABLE SORTABLE,
+        municipality       STRING QUERYABLE SEARCHABLE SORTABLE,
+        municipalityNumber STRING QUERYABLE SEARCHABLE SORTABLE,
+        personEmail        STRING QUERYABLE SEARCHABLE SORTABLE,
+        phoneNumber        STRING QUERYABLE SEARCHABLE SORTABLE,
+        GRANT WRITE TO "_creator",
+        GRANT CREATE TO "_icloud",
+        GRANT READ TO "_world",
+        GRANT READ, CREATE, WRITE TO admin
+    );
+
+    RECORD TYPE UserRecord (
+        "___createTime" TIMESTAMP QUERYABLE SORTABLE,
+        "___createdBy"  REFERENCE QUERYABLE,
+        "___etag"       STRING,
+        "___modTime"    TIMESTAMP,
+        "___modifiedBy" REFERENCE,
+        "___recordID"   REFERENCE QUERYABLE,
+        email           STRING QUERYABLE SEARCHABLE SORTABLE,
+        firstName       STRING QUERYABLE SEARCHABLE SORTABLE,
+        image           ASSET,
+        lastName        STRING QUERYABLE SEARCHABLE SORTABLE,
+        passWord        STRING QUERYABLE SEARCHABLE SORTABLE,
+        GRANT WRITE TO "_creator",
+        GRANT CREATE TO "_icloud",
+        GRANT READ TO "_world",
+        GRANT READ, CREATE, WRITE TO admin
+    );
+
+    RECORD TYPE Users (
+        "___createTime" TIMESTAMP,
+        "___createdBy"  REFERENCE,
+        "___etag"       STRING,
+        "___modTime"    TIMESTAMP,
+        "___modifiedBy" REFERENCE,
+        "___recordID"   REFERENCE,
+        roles           LIST<INT64>,
+        GRANT WRITE TO "_creator",
+        GRANT READ TO "_world",
+        GRANT READ, WRITE TO admin
+    );
+
+    RECORD TYPE ZipCode (
+        "___createTime"    TIMESTAMP QUERYABLE SORTABLE,
+        "___createdBy"     REFERENCE,
+        "___etag"          STRING,
+        "___modTime"       TIMESTAMP,
+        "___modifiedBy"    REFERENCE,
+        "___recordID"      REFERENCE QUERYABLE,
+        category           STRING QUERYABLE SEARCHABLE SORTABLE,
+        municipalityName   STRING QUERYABLE SEARCHABLE SORTABLE,
+        municipalityNumber STRING QUERYABLE SEARCHABLE SORTABLE,
+        postalName         STRING QUERYABLE SEARCHABLE SORTABLE,
+        postalNumber       STRING QUERYABLE SEARCHABLE SORTABLE,
+        GRANT WRITE TO "_creator",
+        GRANT CREATE TO "_icloud",
+        GRANT READ TO "_world",
+        GRANT READ, CREATE, WRITE TO admin
+    );

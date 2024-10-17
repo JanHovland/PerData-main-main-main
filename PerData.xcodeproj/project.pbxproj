@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB01A83D2726C3D1007721E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB01A83B2726C3D1007721E1 /* InfoPlist.strings */; };
+		DB01A8402726C3D1007721E1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB01A83E2726C3D1007721E1 /* Localizable.strings */; };
+		DB0708EF27293D66001B3BBA /* PersonNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0708EE27293D66001B3BBA /* PersonNewView.swift */; };
+		DB0708F127293F97001B3BBA /* PersonUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0708F027293F97001B3BBA /* PersonUpdateView.swift */; };
+		DB0AD89F275185D600A3F8C3 /* BackupUserRecordsToJsonBackupFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0AD89E275185D600A3F8C3 /* BackupUserRecordsToJsonBackupFileView.swift */; };
+		DB0AD8A12751870500A3F8C3 /* BackupUserRecordsToJsonBackupFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0AD8A02751870500A3F8C3 /* BackupUserRecordsToJsonBackupFile.swift */; };
+		DB3AA39D27392D65008B2FDF /* UpdatePersonsFromJsonBackupFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3AA39C27392D65008B2FDF /* UpdatePersonsFromJsonBackupFileView.swift */; };
+		DB3AA39F27392ED1008B2FDF /* UpdatePersonsFromJsonBackupFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3AA39E27392ED1008B2FDF /* UpdatePersonsFromJsonBackupFile.swift */; };
+		DB4BBA2427457D8E00771D7A /* UserRecordOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4BBA2327457D8E00771D7A /* UserRecordOverView.swift */; };
+		DB4BBA282748259500771D7A /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4BBA272748259500771D7A /* SignInView.swift */; };
+		DB4BBA2A274979AE00771D7A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4BBA29274979AE00771D7A /* SignUpView.swift */; };
+		DB4BBA2C274BB4A200771D7A /* UserRecordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4BBA2B274BB4A200771D7A /* UserRecordDetailView.swift */; };
+		DB4FD4D727328BFA0080E084 /* Postnummerregister-ansi.txt in Resources */ = {isa = PBXBuildFile; fileRef = DB4FD4D627328BFA0080E084 /* Postnummerregister-ansi.txt */; };
+		DB4FD4D927328E730080E084 /* UpdateZipCodesFromCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4FD4D827328E730080E084 /* UpdateZipCodesFromCSV.swift */; };
+		DB4FD4DB27328EC80080E084 /* ParseCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4FD4DA27328EC80080E084 /* ParseCSV.swift */; };
+		DB4FD4DE2733E72F0080E084 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4FD4DD2733E72F0080E084 /* ToDoView.swift */; };
+		DB55163D2727E84600153A9A /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB55163C2727E84600153A9A /* PersonDetailView.swift */; };
+		DB587898275E3634004C4F65 /* PersonBirthdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB587897275E3634004C4F65 /* PersonBirthdayView.swift */; };
+		DB64C0312755324F004709C4 /* UserRecordOverViewIndexed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64C0302755324F004709C4 /* UserRecordOverViewIndexed.swift */; };
+		DB64C033275536A2004709C4 /* IndexedTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64C032275536A2004709C4 /* IndexedTableViewHelper.swift */; };
+		DB64C03727569172004709C4 /* PerDataIndexed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64C03627569172004709C4 /* PerDataIndexed.swift */; };
+		DB759E162CBD6A9D00DB67E8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB759E152CBD6A8E00DB67E8 /* Extension.swift */; };
+		DB81CA66274263F700E69D57 /* PersonDetailMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA65274263F700E69D57 /* PersonDetailMapView.swift */; };
+		DB81CA682742665700E69D57 /* PersonDetailPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA672742665700E69D57 /* PersonDetailPhoneView.swift */; };
+		DB81CA6A274272BD00E69D57 /* PersonDetailMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA69274272BD00E69D57 /* PersonDetailMessageView.swift */; };
+		DB81CA6C2742732000E69D57 /* PersonSendSMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA6B2742732000E69D57 /* PersonSendSMS.swift */; };
+		DB81CA6E274273D300E69D57 /* PersonDetailMailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA6D274273D300E69D57 /* PersonDetailMailView.swift */; };
+		DB81CA702742742900E69D57 /* PersonSendEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA6F2742742900E69D57 /* PersonSendEmailView.swift */; };
+		DB81CA732742748000E69D57 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA722742748000E69D57 /* MailView.swift */; };
+		DB81CA752742751900E69D57 /* PersonDetailCabinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA742742751900E69D57 /* PersonDetailCabinView.swift */; };
+		DB81CA782742759E00E69D57 /* CabinReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA772742759E00E69D57 /* CabinReservationView.swift */; };
+		DB81CA7A274275F100E69D57 /* Cabin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA79274275F100E69D57 /* Cabin.swift */; };
+		DB81CA7D2742765A00E69D57 /* Hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA7C2742765A00E69D57 /* Hud.swift */; };
+		DB81CA7F2742768900E69D57 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA7E2742768900E69D57 /* HudView.swift */; };
+		DB81CA81274276FE00E69D57 /* CloudKitCabin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA80274276FE00E69D57 /* CloudKitCabin.swift */; };
+		DB8476DD270EE534007D3E18 /* CloudKitPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8476DC270EE534007D3E18 /* CloudKitPerson.swift */; };
+		DB8476E1270F6742007D3E18 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8476E0270F6742007D3E18 /* Person.swift */; };
+		DB90614C273A826300BF9779 /* CloudKitErrorString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB90614B273A826300BF9779 /* CloudKitErrorString.swift */; };
+		DB970A48273DF670008F6828 /* cloudkit-development.ckdb in Resources */ = {isa = PBXBuildFile; fileRef = DB970A47273DF670008F6828 /* cloudkit-development.ckdb */; };
+		DB975F202753E0C000A6BC4B /* BackupCabinsToJsonBackupFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB975F1F2753E0C000A6BC4B /* BackupCabinsToJsonBackupFileView.swift */; };
+		DB975F222753E0F700A6BC4B /* BackupCabinsToJsonBackupFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB975F212753E0F700A6BC4B /* BackupCabinsToJsonBackupFile.swift */; };
+		DB9B09B127428AA000160195 /* CabinOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9B09B027428AA000160195 /* CabinOverView.swift */; };
+		DB9B09B32742F6B500160195 /* CloudCabinHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9B09B22742F6B500160195 /* CloudCabinHelper.swift */; };
+		DBA02DBC272BEDEC0090D36C /* FindZipCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA02DBB272BEDEC0090D36C /* FindZipCode.swift */; };
+		DBA02DBE272BEE510090D36C /* ZipCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA02DBD272BEE510090D36C /* ZipCode.swift */; };
+		DBA02DC0272BEFF90090D36C /* CloudKitZipCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA02DBF272BEFF90090D36C /* CloudKitZipCode.swift */; };
+		DBA02DC3272C66200090D36C /* CloudZipCodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA02DC2272C66200090D36C /* CloudZipCodeHelper.swift */; };
+		DBA02DC7272E8FDA0090D36C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA02DC6272E8FDA0090D36C /* ImagePicker.swift */; };
+		DBA02DC9272FD1DF0090D36C /* InputGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA02DC8272FD1DF0090D36C /* InputGender.swift */; };
+		DBA02DCF273122D30090D36C /* ZipCodeUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA02DCE273122D30090D36C /* ZipCodeUpdate.swift */; };
+		DBA02DD22731AA120090D36C /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA02DD12731AA120090D36C /* ViewModifiers.swift */; };
+		DBB366AD274E6C39001CB47A /* BackupPersonsToJsonBackupFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB366AC274E6C39001CB47A /* BackupPersonsToJsonBackupFileView.swift */; };
+		DBB366AF274E6CB3001CB47A /* BackupPersonsToJsonBackupFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB366AE274E6CB3001CB47A /* BackupPersonsToJsonBackupFile.swift */; };
+		DBB4B38527141B9D00618F17 /* CloudPersonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4B38427141B9D00618F17 /* CloudPersonHelper.swift */; };
+		DBB872DE2716C70F00A3516B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB872DD2716C70F00A3516B /* Launch Screen.storyboard */; };
+		DBB952AD2752216C009A0181 /* UpdateUserRecordsFromJsonBackupFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB952AC2752216C009A0181 /* UpdateUserRecordsFromJsonBackupFileView.swift */; };
+		DBB952AF275221AD009A0181 /* UpdateUserRecordsFromJsonBackupFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB952AE275221AD009A0181 /* UpdateUserRecordsFromJsonBackupFile.swift */; };
+		DBC9041F273FFF740043DAC3 /* MakeAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9041E273FFF740043DAC3 /* MakeAttributedString.swift */; };
+		DBCE88902754126C006E6E35 /* UpdateCabinsFromJsonBackupFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCE888F2754126C006E6E35 /* UpdateCabinsFromJsonBackupFileView.swift */; };
+		DBCE889227541290006E6E35 /* UpdateCabinsFromJsonBackupFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCE889127541290006E6E35 /* UpdateCabinsFromJsonBackupFile.swift */; };
+		DBCE88942754C2FB006E6E35 /* CabinBackup.json in Resources */ = {isa = PBXBuildFile; fileRef = DBCE88932754C2FB006E6E35 /* CabinBackup.json */; };
+		DBCE88962754CE79006E6E35 /* UserRecordBackup.json in Resources */ = {isa = PBXBuildFile; fileRef = DBCE88952754CE79006E6E35 /* UserRecordBackup.json */; };
+		DBCE88982754CF37006E6E35 /* PersonBackup.json in Resources */ = {isa = PBXBuildFile; fileRef = DBCE88972754CF37006E6E35 /* PersonBackup.json */; };
+		DBDEACAE273663B7003CA322 /* SwiftActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDEACAD273663B7003CA322 /* SwiftActivityIndicator.swift */; };
+		DBDF4D662743D00B0019D879 /* CloudKitUserRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDF4D652743D00B0019D879 /* CloudKitUserRecord.swift */; };
+		DBDF4D682743D0480019D879 /* CloudUserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDF4D672743D0480019D879 /* CloudUserHelper.swift */; };
+		DBDF4D6A2743D2DA0019D879 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDF4D692743D2DA0019D879 /* User.swift */; };
+		DBDF4D6C2743D34A0019D879 /* UserRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDF4D6B2743D34A0019D879 /* UserRecord.swift */; };
+		DBE25B5D270C556200AE255B /* PerDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE25B5C270C556200AE255B /* PerDataApp.swift */; };
+		DBE25B61270C556400AE255B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE25B60270C556400AE255B /* Assets.xcassets */; };
+		DBE25B64270C556400AE255B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE25B63270C556400AE255B /* Preview Assets.xcassets */; };
+		DBE25B6D270C55C500AE255B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE25B6C270C55C500AE255B /* CloudKit.framework */; };
+		DBE25B6F270C566000AE255B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE25B6E270C566000AE255B /* Config.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB01A8312726C05A007721E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB01A83C2726C3D1007721E1 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB01A83F2726C3D1007721E1 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DB0708EE27293D66001B3BBA /* PersonNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonNewView.swift; sourceTree = "<group>"; };
+		DB0708F027293F97001B3BBA /* PersonUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonUpdateView.swift; sourceTree = "<group>"; };
+		DB0AD89E275185D600A3F8C3 /* BackupUserRecordsToJsonBackupFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupUserRecordsToJsonBackupFileView.swift; sourceTree = "<group>"; };
+		DB0AD8A02751870500A3F8C3 /* BackupUserRecordsToJsonBackupFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupUserRecordsToJsonBackupFile.swift; sourceTree = "<group>"; };
+		DB3AA39C27392D65008B2FDF /* UpdatePersonsFromJsonBackupFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePersonsFromJsonBackupFileView.swift; sourceTree = "<group>"; };
+		DB3AA39E27392ED1008B2FDF /* UpdatePersonsFromJsonBackupFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePersonsFromJsonBackupFile.swift; sourceTree = "<group>"; };
+		DB4BBA2327457D8E00771D7A /* UserRecordOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecordOverView.swift; sourceTree = "<group>"; };
+		DB4BBA272748259500771D7A /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		DB4BBA29274979AE00771D7A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		DB4BBA2B274BB4A200771D7A /* UserRecordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecordDetailView.swift; sourceTree = "<group>"; };
+		DB4FD4D627328BFA0080E084 /* Postnummerregister-ansi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Postnummerregister-ansi.txt"; sourceTree = "<group>"; };
+		DB4FD4D827328E730080E084 /* UpdateZipCodesFromCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateZipCodesFromCSV.swift; sourceTree = "<group>"; };
+		DB4FD4DA27328EC80080E084 /* ParseCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseCSV.swift; sourceTree = "<group>"; };
+		DB4FD4DD2733E72F0080E084 /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
+		DB55163C2727E84600153A9A /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
+		DB587897275E3634004C4F65 /* PersonBirthdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonBirthdayView.swift; sourceTree = "<group>"; };
+		DB64C0302755324F004709C4 /* UserRecordOverViewIndexed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecordOverViewIndexed.swift; sourceTree = "<group>"; };
+		DB64C032275536A2004709C4 /* IndexedTableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexedTableViewHelper.swift; sourceTree = "<group>"; };
+		DB64C03627569172004709C4 /* PerDataIndexed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerDataIndexed.swift; sourceTree = "<group>"; };
+		DB759E152CBD6A8E00DB67E8 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		DB81CA65274263F700E69D57 /* PersonDetailMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailMapView.swift; sourceTree = "<group>"; };
+		DB81CA672742665700E69D57 /* PersonDetailPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailPhoneView.swift; sourceTree = "<group>"; };
+		DB81CA69274272BD00E69D57 /* PersonDetailMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailMessageView.swift; sourceTree = "<group>"; };
+		DB81CA6B2742732000E69D57 /* PersonSendSMS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSendSMS.swift; sourceTree = "<group>"; };
+		DB81CA6D274273D300E69D57 /* PersonDetailMailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailMailView.swift; sourceTree = "<group>"; };
+		DB81CA6F2742742900E69D57 /* PersonSendEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSendEmailView.swift; sourceTree = "<group>"; };
+		DB81CA722742748000E69D57 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		DB81CA742742751900E69D57 /* PersonDetailCabinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailCabinView.swift; sourceTree = "<group>"; };
+		DB81CA772742759E00E69D57 /* CabinReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinReservationView.swift; sourceTree = "<group>"; };
+		DB81CA79274275F100E69D57 /* Cabin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cabin.swift; sourceTree = "<group>"; };
+		DB81CA7C2742765A00E69D57 /* Hud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hud.swift; sourceTree = "<group>"; };
+		DB81CA7E2742768900E69D57 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		DB81CA80274276FE00E69D57 /* CloudKitCabin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitCabin.swift; sourceTree = "<group>"; };
+		DB8476DC270EE534007D3E18 /* CloudKitPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitPerson.swift; sourceTree = "<group>"; };
+		DB8476E0270F6742007D3E18 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DB90614B273A826300BF9779 /* CloudKitErrorString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitErrorString.swift; sourceTree = "<group>"; };
+		DB970A47273DF670008F6828 /* cloudkit-development.ckdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cloudkit-development.ckdb"; sourceTree = "<group>"; };
+		DB975F1F2753E0C000A6BC4B /* BackupCabinsToJsonBackupFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupCabinsToJsonBackupFileView.swift; sourceTree = "<group>"; };
+		DB975F212753E0F700A6BC4B /* BackupCabinsToJsonBackupFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupCabinsToJsonBackupFile.swift; sourceTree = "<group>"; };
+		DB9B09B027428AA000160195 /* CabinOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabinOverView.swift; sourceTree = "<group>"; };
+		DB9B09B22742F6B500160195 /* CloudCabinHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudCabinHelper.swift; sourceTree = "<group>"; };
+		DBA02DBB272BEDEC0090D36C /* FindZipCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindZipCode.swift; sourceTree = "<group>"; };
+		DBA02DBD272BEE510090D36C /* ZipCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCode.swift; sourceTree = "<group>"; };
+		DBA02DBF272BEFF90090D36C /* CloudKitZipCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitZipCode.swift; sourceTree = "<group>"; };
+		DBA02DC2272C66200090D36C /* CloudZipCodeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudZipCodeHelper.swift; sourceTree = "<group>"; };
+		DBA02DC6272E8FDA0090D36C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		DBA02DC8272FD1DF0090D36C /* InputGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGender.swift; sourceTree = "<group>"; };
+		DBA02DCE273122D30090D36C /* ZipCodeUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeUpdate.swift; sourceTree = "<group>"; };
+		DBA02DD12731AA120090D36C /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		DBB366AC274E6C39001CB47A /* BackupPersonsToJsonBackupFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupPersonsToJsonBackupFileView.swift; sourceTree = "<group>"; };
+		DBB366AE274E6CB3001CB47A /* BackupPersonsToJsonBackupFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupPersonsToJsonBackupFile.swift; sourceTree = "<group>"; };
+		DBB4B38427141B9D00618F17 /* CloudPersonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudPersonHelper.swift; sourceTree = "<group>"; };
+		DBB872DD2716C70F00A3516B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		DBB952AC2752216C009A0181 /* UpdateUserRecordsFromJsonBackupFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserRecordsFromJsonBackupFileView.swift; sourceTree = "<group>"; };
+		DBB952AE275221AD009A0181 /* UpdateUserRecordsFromJsonBackupFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserRecordsFromJsonBackupFile.swift; sourceTree = "<group>"; };
+		DBC9041E273FFF740043DAC3 /* MakeAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAttributedString.swift; sourceTree = "<group>"; };
+		DBCE888F2754126C006E6E35 /* UpdateCabinsFromJsonBackupFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCabinsFromJsonBackupFileView.swift; sourceTree = "<group>"; };
+		DBCE889127541290006E6E35 /* UpdateCabinsFromJsonBackupFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCabinsFromJsonBackupFile.swift; sourceTree = "<group>"; };
+		DBCE88932754C2FB006E6E35 /* CabinBackup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CabinBackup.json; sourceTree = "<group>"; };
+		DBCE88952754CE79006E6E35 /* UserRecordBackup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserRecordBackup.json; sourceTree = "<group>"; };
+		DBCE88972754CF37006E6E35 /* PersonBackup.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PersonBackup.json; sourceTree = "<group>"; };
+		DBDEACAD273663B7003CA322 /* SwiftActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftActivityIndicator.swift; sourceTree = "<group>"; };
+		DBDF4D652743D00B0019D879 /* CloudKitUserRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUserRecord.swift; sourceTree = "<group>"; };
+		DBDF4D672743D0480019D879 /* CloudUserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudUserHelper.swift; sourceTree = "<group>"; };
+		DBDF4D692743D2DA0019D879 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DBDF4D6B2743D34A0019D879 /* UserRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecord.swift; sourceTree = "<group>"; };
+		DBE25B59270C556200AE255B /* PerData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBE25B5C270C556200AE255B /* PerDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerDataApp.swift; sourceTree = "<group>"; };
+		DBE25B60270C556400AE255B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBE25B63270C556400AE255B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DBE25B6A270C55B500AE255B /* PerData.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PerData.entitlements; sourceTree = "<group>"; };
+		DBE25B6C270C55C500AE255B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DBE25B6E270C566000AE255B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBE25B56270C556200AE255B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE25B6D270C55C500AE255B /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB3AA3992737E9B1008B2FDF /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				DBCE88972754CF37006E6E35 /* PersonBackup.json */,
+				DBB366AE274E6CB3001CB47A /* BackupPersonsToJsonBackupFile.swift */,
+				DBB366AC274E6C39001CB47A /* BackupPersonsToJsonBackupFileView.swift */,
+				DB3AA39E27392ED1008B2FDF /* UpdatePersonsFromJsonBackupFile.swift */,
+				DB3AA39C27392D65008B2FDF /* UpdatePersonsFromJsonBackupFileView.swift */,
+				DBCE88952754CE79006E6E35 /* UserRecordBackup.json */,
+				DB0AD8A02751870500A3F8C3 /* BackupUserRecordsToJsonBackupFile.swift */,
+				DB0AD89E275185D600A3F8C3 /* BackupUserRecordsToJsonBackupFileView.swift */,
+				DBB952AE275221AD009A0181 /* UpdateUserRecordsFromJsonBackupFile.swift */,
+				DBB952AC2752216C009A0181 /* UpdateUserRecordsFromJsonBackupFileView.swift */,
+				DBCE88932754C2FB006E6E35 /* CabinBackup.json */,
+				DB975F212753E0F700A6BC4B /* BackupCabinsToJsonBackupFile.swift */,
+				DB975F1F2753E0C000A6BC4B /* BackupCabinsToJsonBackupFileView.swift */,
+				DBCE889127541290006E6E35 /* UpdateCabinsFromJsonBackupFile.swift */,
+				DBCE888F2754126C006E6E35 /* UpdateCabinsFromJsonBackupFileView.swift */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		DB4BBA2227457D6D00771D7A /* UserRecord */ = {
+			isa = PBXGroup;
+			children = (
+				DB4BBA2B274BB4A200771D7A /* UserRecordDetailView.swift */,
+				DB4BBA2327457D8E00771D7A /* UserRecordOverView.swift */,
+				DB64C0302755324F004709C4 /* UserRecordOverViewIndexed.swift */,
+			);
+			path = UserRecord;
+			sourceTree = "<group>";
+		};
+		DB4FD4DC2733E7010080E084 /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				DB4FD4DD2733E72F0080E084 /* ToDoView.swift */,
+			);
+			path = ToDo;
+			sourceTree = "<group>";
+		};
+		DB55163B2727E82600153A9A /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				DB587897275E3634004C4F65 /* PersonBirthdayView.swift */,
+				DB64C03627569172004709C4 /* PerDataIndexed.swift */,
+				DBE25B5C270C556200AE255B /* PerDataApp.swift */,
+				DB55163C2727E84600153A9A /* PersonDetailView.swift */,
+				DB81CA65274263F700E69D57 /* PersonDetailMapView.swift */,
+				DB81CA6D274273D300E69D57 /* PersonDetailMailView.swift */,
+				DB81CA69274272BD00E69D57 /* PersonDetailMessageView.swift */,
+				DB81CA672742665700E69D57 /* PersonDetailPhoneView.swift */,
+				DB81CA742742751900E69D57 /* PersonDetailCabinView.swift */,
+				DB0708EE27293D66001B3BBA /* PersonNewView.swift */,
+				DB81CA6B2742732000E69D57 /* PersonSendSMS.swift */,
+				DB81CA6F2742742900E69D57 /* PersonSendEmailView.swift */,
+				DB0708F027293F97001B3BBA /* PersonUpdateView.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		DB587896275B682F004C4F65 /* SignInUp */ = {
+			isa = PBXGroup;
+			children = (
+				DB4BBA272748259500771D7A /* SignInView.swift */,
+				DB4BBA29274979AE00771D7A /* SignUpView.swift */,
+			);
+			path = SignInUp;
+			sourceTree = "<group>";
+		};
+		DB759E142CBD6A7E00DB67E8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DB759E152CBD6A8E00DB67E8 /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DB81CA712742746600E69D57 /* Mail */ = {
+			isa = PBXGroup;
+			children = (
+				DB81CA722742748000E69D57 /* MailView.swift */,
+			);
+			path = Mail;
+			sourceTree = "<group>";
+		};
+		DB81CA762742755D00E69D57 /* Cabin */ = {
+			isa = PBXGroup;
+			children = (
+				DB81CA772742759E00E69D57 /* CabinReservationView.swift */,
+				DB9B09B027428AA000160195 /* CabinOverView.swift */,
+			);
+			path = Cabin;
+			sourceTree = "<group>";
+		};
+		DB81CA7B2742763900E69D57 /* Hud */ = {
+			isa = PBXGroup;
+			children = (
+				DB81CA7C2742765A00E69D57 /* Hud.swift */,
+				DB81CA7E2742768900E69D57 /* HudView.swift */,
+			);
+			path = Hud;
+			sourceTree = "<group>";
+		};
+		DB8476DE270EF4DE007D3E18 /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				DB81CA80274276FE00E69D57 /* CloudKitCabin.swift */,
+				DB90614B273A826300BF9779 /* CloudKitErrorString.swift */,
+				DB8476DC270EE534007D3E18 /* CloudKitPerson.swift */,
+				DBA02DBF272BEFF90090D36C /* CloudKitZipCode.swift */,
+				DBDF4D652743D00B0019D879 /* CloudKitUserRecord.swift */,
+			);
+			path = CloudKit;
+			sourceTree = "<group>";
+		};
+		DB8476DF270F672D007D3E18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB81CA79274275F100E69D57 /* Cabin.swift */,
+				DB8476E0270F6742007D3E18 /* Person.swift */,
+				DBDF4D692743D2DA0019D879 /* User.swift */,
+				DBA02DBD272BEE510090D36C /* ZipCode.swift */,
+				DBDF4D6B2743D34A0019D879 /* UserRecord.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBA02DCA273070140090D36C /* ZipCode */ = {
+			isa = PBXGroup;
+			children = (
+				DBA02DBB272BEDEC0090D36C /* FindZipCode.swift */,
+				DB4FD4DA27328EC80080E084 /* ParseCSV.swift */,
+				DB4FD4D627328BFA0080E084 /* Postnummerregister-ansi.txt */,
+				DB4FD4D827328E730080E084 /* UpdateZipCodesFromCSV.swift */,
+			);
+			path = ZipCode;
+			sourceTree = "<group>";
+		};
+		DBA02DCB2730703F0090D36C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DBA02DC6272E8FDA0090D36C /* ImagePicker.swift */,
+				DBA02DC8272FD1DF0090D36C /* InputGender.swift */,
+				DBC9041E273FFF740043DAC3 /* MakeAttributedString.swift */,
+				DBDEACAD273663B7003CA322 /* SwiftActivityIndicator.swift */,
+				DB64C032275536A2004709C4 /* IndexedTableViewHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DBA02DCC273070A00090D36C /* Cloud Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DBB4B38427141B9D00618F17 /* CloudPersonHelper.swift */,
+				DBA02DC2272C66200090D36C /* CloudZipCodeHelper.swift */,
+				DB970A47273DF670008F6828 /* cloudkit-development.ckdb */,
+				DB9B09B22742F6B500160195 /* CloudCabinHelper.swift */,
+				DBDF4D672743D0480019D879 /* CloudUserHelper.swift */,
+			);
+			path = "Cloud Helper";
+			sourceTree = "<group>";
+		};
+		DBA02DCD273122930090D36C /* MenuTools */ = {
+			isa = PBXGroup;
+			children = (
+				DBA02DCE273122D30090D36C /* ZipCodeUpdate.swift */,
+			);
+			path = MenuTools;
+			sourceTree = "<group>";
+		};
+		DBA02DD02731A9EF0090D36C /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				DBA02DD12731AA120090D36C /* ViewModifiers.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		DBE25B50270C556200AE255B = {
+			isa = PBXGroup;
+			children = (
+				DBE25B5B270C556200AE255B /* PerData */,
+				DBE25B5A270C556200AE255B /* Products */,
+				DBE25B6B270C55C500AE255B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DBE25B5A270C556200AE255B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBE25B59270C556200AE255B /* PerData.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBE25B5B270C556200AE255B /* PerData */ = {
+			isa = PBXGroup;
+			children = (
+				DB759E142CBD6A7E00DB67E8 /* Extension */,
+				DB01A8312726C05A007721E1 /* Info.plist */,
+				DB01A83E2726C3D1007721E1 /* Localizable.strings */,
+				DB01A83B2726C3D1007721E1 /* InfoPlist.strings */,
+				DBE25B60270C556400AE255B /* Assets.xcassets */,
+				DBE25B6E270C566000AE255B /* Config.swift */,
+				DBB872DD2716C70F00A3516B /* Launch Screen.storyboard */,
+				DBE25B6A270C55B500AE255B /* PerData.entitlements */,
+				DB81CA762742755D00E69D57 /* Cabin */,
+				DB8476DE270EF4DE007D3E18 /* CloudKit */,
+				DBA02DCC273070A00090D36C /* Cloud Helper */,
+				DB81CA7B2742763900E69D57 /* Hud */,
+				DB3AA3992737E9B1008B2FDF /* Json */,
+				DB81CA712742746600E69D57 /* Mail */,
+				DBA02DCD273122930090D36C /* MenuTools */,
+				DB8476DF270F672D007D3E18 /* Model */,
+				DB55163B2727E82600153A9A /* Person */,
+				DBE25B62270C556400AE255B /* Preview Content */,
+				DB587896275B682F004C4F65 /* SignInUp */,
+				DB4FD4DC2733E7010080E084 /* ToDo */,
+				DB4BBA2227457D6D00771D7A /* UserRecord */,
+				DBA02DD02731A9EF0090D36C /* ViewModifiers */,
+				DBA02DCA273070140090D36C /* ZipCode */,
+				DBA02DCB2730703F0090D36C /* Utilities */,
+			);
+			path = PerData;
+			sourceTree = "<group>";
+		};
+		DBE25B62270C556400AE255B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DBE25B63270C556400AE255B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DBE25B6B270C55C500AE255B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBE25B6C270C55C500AE255B /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBE25B58270C556200AE255B /* PerData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBE25B67270C556400AE255B /* Build configuration list for PBXNativeTarget "PerData" */;
+			buildPhases = (
+				DBE25B55270C556200AE255B /* Sources */,
+				DBE25B56270C556200AE255B /* Frameworks */,
+				DBE25B57270C556200AE255B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerData;
+			productName = PerData;
+			productReference = DBE25B59270C556200AE255B /* PerData.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBE25B51270C556200AE255B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					DBE25B58270C556200AE255B = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = DBE25B54270C556200AE255B /* Build configuration list for PBXProject "PerData" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				nb,
+			);
+			mainGroup = DBE25B50270C556200AE255B;
+			productRefGroup = DBE25B5A270C556200AE255B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBE25B58270C556200AE255B /* PerData */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBE25B57270C556200AE255B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBCE88942754C2FB006E6E35 /* CabinBackup.json in Resources */,
+				DB01A8402726C3D1007721E1 /* Localizable.strings in Resources */,
+				DBB872DE2716C70F00A3516B /* Launch Screen.storyboard in Resources */,
+				DB970A48273DF670008F6828 /* cloudkit-development.ckdb in Resources */,
+				DB4FD4D727328BFA0080E084 /* Postnummerregister-ansi.txt in Resources */,
+				DB01A83D2726C3D1007721E1 /* InfoPlist.strings in Resources */,
+				DBCE88962754CE79006E6E35 /* UserRecordBackup.json in Resources */,
+				DBE25B64270C556400AE255B /* Preview Assets.xcassets in Resources */,
+				DBCE88982754CF37006E6E35 /* PersonBackup.json in Resources */,
+				DBE25B61270C556400AE255B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBE25B55270C556200AE255B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBB952AF275221AD009A0181 /* UpdateUserRecordsFromJsonBackupFile.swift in Sources */,
+				DB3AA39D27392D65008B2FDF /* UpdatePersonsFromJsonBackupFileView.swift in Sources */,
+				DB81CA6E274273D300E69D57 /* PersonDetailMailView.swift in Sources */,
+				DB8476E1270F6742007D3E18 /* Person.swift in Sources */,
+				DBB366AD274E6C39001CB47A /* BackupPersonsToJsonBackupFileView.swift in Sources */,
+				DB0AD89F275185D600A3F8C3 /* BackupUserRecordsToJsonBackupFileView.swift in Sources */,
+				DB64C033275536A2004709C4 /* IndexedTableViewHelper.swift in Sources */,
+				DB759E162CBD6A9D00DB67E8 /* Extension.swift in Sources */,
+				DB9B09B127428AA000160195 /* CabinOverView.swift in Sources */,
+				DBDF4D662743D00B0019D879 /* CloudKitUserRecord.swift in Sources */,
+				DB0AD8A12751870500A3F8C3 /* BackupUserRecordsToJsonBackupFile.swift in Sources */,
+				DB4FD4D927328E730080E084 /* UpdateZipCodesFromCSV.swift in Sources */,
+				DB4BBA2427457D8E00771D7A /* UserRecordOverView.swift in Sources */,
+				DBCE88902754126C006E6E35 /* UpdateCabinsFromJsonBackupFileView.swift in Sources */,
+				DB90614C273A826300BF9779 /* CloudKitErrorString.swift in Sources */,
+				DBA02DC9272FD1DF0090D36C /* InputGender.swift in Sources */,
+				DB975F222753E0F700A6BC4B /* BackupCabinsToJsonBackupFile.swift in Sources */,
+				DB81CA732742748000E69D57 /* MailView.swift in Sources */,
+				DB0708EF27293D66001B3BBA /* PersonNewView.swift in Sources */,
+				DB975F202753E0C000A6BC4B /* BackupCabinsToJsonBackupFileView.swift in Sources */,
+				DBA02DC7272E8FDA0090D36C /* ImagePicker.swift in Sources */,
+				DBB952AD2752216C009A0181 /* UpdateUserRecordsFromJsonBackupFileView.swift in Sources */,
+				DBA02DC3272C66200090D36C /* CloudZipCodeHelper.swift in Sources */,
+				DBB366AF274E6CB3001CB47A /* BackupPersonsToJsonBackupFile.swift in Sources */,
+				DB3AA39F27392ED1008B2FDF /* UpdatePersonsFromJsonBackupFile.swift in Sources */,
+				DB81CA752742751900E69D57 /* PersonDetailCabinView.swift in Sources */,
+				DB587898275E3634004C4F65 /* PersonBirthdayView.swift in Sources */,
+				DB81CA782742759E00E69D57 /* CabinReservationView.swift in Sources */,
+				DB4BBA2C274BB4A200771D7A /* UserRecordDetailView.swift in Sources */,
+				DBC9041F273FFF740043DAC3 /* MakeAttributedString.swift in Sources */,
+				DB81CA66274263F700E69D57 /* PersonDetailMapView.swift in Sources */,
+				DB81CA682742665700E69D57 /* PersonDetailPhoneView.swift in Sources */,
+				DB64C03727569172004709C4 /* PerDataIndexed.swift in Sources */,
+				DB81CA7D2742765A00E69D57 /* Hud.swift in Sources */,
+				DB8476DD270EE534007D3E18 /* CloudKitPerson.swift in Sources */,
+				DBDEACAE273663B7003CA322 /* SwiftActivityIndicator.swift in Sources */,
+				DBDF4D682743D0480019D879 /* CloudUserHelper.swift in Sources */,
+				DB9B09B32742F6B500160195 /* CloudCabinHelper.swift in Sources */,
+				DB81CA6C2742732000E69D57 /* PersonSendSMS.swift in Sources */,
+				DBCE889227541290006E6E35 /* UpdateCabinsFromJsonBackupFile.swift in Sources */,
+				DBA02DC0272BEFF90090D36C /* CloudKitZipCode.swift in Sources */,
+				DB81CA81274276FE00E69D57 /* CloudKitCabin.swift in Sources */,
+				DBA02DBC272BEDEC0090D36C /* FindZipCode.swift in Sources */,
+				DB81CA702742742900E69D57 /* PersonSendEmailView.swift in Sources */,
+				DB4FD4DB27328EC80080E084 /* ParseCSV.swift in Sources */,
+				DB64C0312755324F004709C4 /* UserRecordOverViewIndexed.swift in Sources */,
+				DBA02DCF273122D30090D36C /* ZipCodeUpdate.swift in Sources */,
+				DBE25B5D270C556200AE255B /* PerDataApp.swift in Sources */,
+				DBB4B38527141B9D00618F17 /* CloudPersonHelper.swift in Sources */,
+				DB81CA7A274275F100E69D57 /* Cabin.swift in Sources */,
+				DB4FD4DE2733E72F0080E084 /* ToDoView.swift in Sources */,
+				DB81CA6A274272BD00E69D57 /* PersonDetailMessageView.swift in Sources */,
+				DBA02DD22731AA120090D36C /* ViewModifiers.swift in Sources */,
+				DB4BBA282748259500771D7A /* SignInView.swift in Sources */,
+				DBDF4D6C2743D34A0019D879 /* UserRecord.swift in Sources */,
+				DB4BBA2A274979AE00771D7A /* SignUpView.swift in Sources */,
+				DB55163D2727E84600153A9A /* PersonDetailView.swift in Sources */,
+				DBA02DBE272BEE510090D36C /* ZipCode.swift in Sources */,
+				DB0708F127293F97001B3BBA /* PersonUpdateView.swift in Sources */,
+				DB81CA7F2742768900E69D57 /* HudView.swift in Sources */,
+				DBE25B6F270C566000AE255B /* Config.swift in Sources */,
+				DBDF4D6A2743D2DA0019D879 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB01A83B2726C3D1007721E1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB01A83C2726C3D1007721E1 /* nb */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DB01A83E2726C3D1007721E1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB01A83F2726C3D1007721E1 /* nb */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBE25B65270C556400AE255B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBE25B66270C556400AE255B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBE25B68270C556400AE255B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = PerData/PerData.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PerData/Preview Content\"";
+				DEVELOPMENT_TEAM = 6UR9TA6744;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PerData/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janhovland.PerData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBE25B69270C556400AE255B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = PerData/PerData.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PerData/Preview Content\"";
+				DEVELOPMENT_TEAM = 6UR9TA6744;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PerData/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janhovland.PerData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBE25B54270C556200AE255B /* Build configuration list for PBXProject "PerData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBE25B65270C556400AE255B /* Debug */,
+				DBE25B66270C556400AE255B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBE25B67270C556400AE255B /* Build configuration list for PBXNativeTarget "PerData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBE25B68270C556400AE255B /* Debug */,
+				DBE25B69270C556400AE255B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBE25B51270C556200AE255B /* Project object */;
+}

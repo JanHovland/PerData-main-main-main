@@ -1,0 +1,20 @@
+[
+    {
+        "id": "2AB6BBA1-A121-47AA-B388-D2A72BA3D4CC",
+        "cabinData" : {
+            "firstName" : "Amalie",
+            "lastName" : "Hovland Ree",
+            "fromDate" : 20211129,
+            "toDate" : 20211129
+        }
+    },
+    {
+        "id": "65DF9B76-2825-4CE0-81D1-209D498C6B1C",
+        "cabinData" : {
+            "firstName" : "Jan",
+            "lastName" : "Hovland",
+            "fromDate" : 20211202,
+            "toDate" : 20211229
+        }
+    }
+]

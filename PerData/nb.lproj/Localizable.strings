@@ -1,0 +1,426 @@
+/* No comment provided by engineer. */
+"_Choose_" = "_Velg_";
+
+/* No comment provided by engineer. */
+"%@" = "%@";
+
+/* No comment provided by engineer. */
+"Add a new User" = "Ny bruker";
+
+/* No comment provided by engineer. */
+"Add user" = "Lagre";
+
+/* No comment provided by engineer. */
+"Address" = "Adresse";
+
+/* No comment provided by engineer. */
+"All cabins have been deleted" = "Alle hyttereservasjonene er slettet.";
+
+/* No comment provided by engineer. */
+"All the fields must have a value" = "Alle feltene må ha verdi.";
+
+/* No comment provided by engineer. */
+"Backups the cabins to Json" = "Hyttereservasjon backup to Json";
+
+/* No comment provided by engineer. */
+"Backups the persons to Json" = "Person backup to Json";
+
+/* No comment provided by engineer. */
+"Backups the userRecords to Json" = "Bruker backup to Json";
+
+/* No comment provided by engineer. */
+"Birthday" = "Fødsesdager";
+
+/* No comment provided by engineer. */
+"Birthdays" = "Fødselsdager";
+
+/* No comment provided by engineer. */
+"Cabin" = "Hytta";
+
+/* No comment provided by engineer. */
+"Cabin backup til Json fil" = "Hyttereservasjon til Json";
+
+/* No comment provided by engineer. */
+"Cabin backup to Json" = "Hyttereservasjon til Json";
+
+/* No comment provided by engineer. */
+"Cabin OverView" = "Hyttereservasjon";
+
+/* No comment provided by engineer. */
+"Cabin reservation" = "Hyttereservasjon";
+
+/* No comment provided by engineer. */
+"Cabin reservation saved" = "Hyttereservasjonen er lagret.";
+
+/* No comment provided by engineer. */
+"Cabin update Json" = "Hyttereservasjon  fra Json";
+
+/* No comment provided by engineer. */
+"Can not delete a person without a record ID. " = "Kan ikke slette en person uten ID.";
+
+/* No comment provided by engineer. */
+"Can not find %@" = "Kan ikke finne %@";
+
+/* No comment provided by engineer. */
+"Can not find person ID" = "Kan ikke finne person ID";
+
+/* No comment provided by engineer. */
+"Can't send emails from this device" = "Kan ikke sende e-Post fra denne enheten.";
+
+/* No comment provided by engineer. */
+"City" = "By";
+
+/* No comment provided by engineer. */
+"Citynumber" = "Postnummer";
+
+/* No comment provided by engineer. */
+"Create a new account?" = "Opprette ny bruker?";
+
+/* No comment provided by engineer. */
+"Date of birth" = "Fødselsdato";
+
+/* No comment provided by engineer. */
+"Delete" = "Slett";
+
+/* No comment provided by engineer. */
+"Delete a cabin" = "Slette en hyttereservasjon";
+
+/* No comment provided by engineer. */
+"Delete a person" = "Slett en person";
+
+/* No comment provided by engineer. */
+"Delete an UserRecord" = "Slette en bruker";
+
+/* No comment provided by engineer. */
+"Delete UserRecord" = "Slette bruker";
+
+/* No comment provided by engineer. */
+"email" = "e-Post";
+
+/* No comment provided by engineer. */
+"Email" = "e-Post";
+
+/* No comment provided by engineer. */
+"Empty city name" = "Tomt by nav";
+
+/* No comment provided by engineer. */
+"Enter email" = "Legg inn e-Post";
+
+/* No comment provided by engineer. */
+"Enter firstName" = "Legg inn fornavn";
+
+/* No comment provided by engineer. */
+"Enter lastName" = "Legg inn etternavn";
+
+/* No comment provided by engineer. */
+"Enter passWord" = "Legg inn passord";
+
+/* No comment provided by engineer. */
+"Error Cabin reservation" = "Feil med hytteresevasjon";
+
+/* No comment provided by engineer. */
+"Error eMail" = "Feil med  sending av e-Post";
+
+/* No comment provided by engineer. */
+"Error looking for userRecord" = "Server feil ved søking etter en bruker.";
+
+/* No comment provided by engineer. */
+"Error message from the Server" = "Feilmelding fra Serveren";
+
+/* No comment provided by engineer. */
+"Error trying parse json" = "Feil ved lesing av Json filen";
+
+/* No comment provided by engineer. */
+"Error trying parse Json file" = "Feil ved lesing av Json filen";
+
+/* No comment provided by engineer. */
+"Fetching asset failed" = "Henting av innholdselementet mislyktes.";
+
+/* No comment provided by engineer. */
+"Field 'createdBy' is not marked queryable" = "Feltet 'createdBy' er ikke markert som queryable.";
+
+/* No comment provided by engineer. */
+"First- and LastName must both have values." = "For- og etternavn må begge ha verdier.";
+
+/* No comment provided by engineer. */
+"FirstName" = "Fornavn";
+
+/* No comment provided by engineer. */
+"From Ascii" = "Fra ascii";
+
+/* No comment provided by engineer. */
+"From date" = "Fra dato";
+
+/* No comment provided by engineer. */
+"From date / To date" = "Fradato / Tildato";
+
+/* No comment provided by engineer. */
+"From date must be earlier than To date." = "Fradato må være tidligere enn tildato";
+
+/* No comment provided by engineer. */
+"From Json" = "Fra Json";
+
+/* No comment provided by engineer. */
+"Have uncommented the neccessary function: updateZipCodesFromCSV().\nPress the toggle button for updating..." = "Har kommentert bort den nødvendige funksjonen: updateZipCodesFromCSV().\nSett på bryteren for å kunne starte oppdatering av ZipCode tabellen.";
+
+/* No comment provided by engineer. */
+"If the person exists, the person will be modified and the original image kept. Please note that if the Person table is empty, the Json backup does not have image information!\nYou can call the update several times." = "Hvis personen eksisterer, vil personen bli endret og originalbildet beholdes. Vær oppmerksom på at hvis Person-tabellen er tom, har ikke Json-sikkerhetskopien bildeinformasjon!\nDu kan kjøre oppdatering flere ganger.\n";
+
+/* No comment provided by engineer. */
+"iPad" = "iPad";
+
+/* No comment provided by engineer. */
+"iPhone" = "iPhone";
+
+/* No comment provided by engineer. */
+"Json backup person" = "Json person backup";
+
+/* No comment provided by engineer. */
+"Json update person" = "Oppdater Person fra Json ";
+
+/* No comment provided by engineer. */
+"LastName" = "Etternavn";
+
+/* No comment provided by engineer. */
+"Mail" = "e-Post";
+
+/* No comment provided by engineer. */
+"Man" = "Mann";
+
+/* No comment provided by engineer. */
+"Menu" = "Meny";
+
+/* No comment provided by engineer. */
+"Missing personal email" = "Mangler e-Post adresse";
+
+/* No comment provided by engineer. */
+"Missing phonenumber" = "Mangler tefonnr";
+
+/* No comment provided by engineer. */
+"Missing value(s)" = "Manglende verdi(er)";
+
+/* No comment provided by engineer. */
+"Missing values." = "Mangler verdier";
+
+/* No comment provided by engineer. */
+"Modify" = "Oppdater";
+
+/* No comment provided by engineer. */
+"Modify person" = "Oppdater person";
+
+/* No comment provided by engineer. */
+"Municipality" = "Kommune";
+
+/* No comment provided by engineer. */
+"Municipality number" = "Kommune nr";
+
+/* No comment provided by engineer. */
+"Name must contain a value." = "Fornavnet kan ikke være tomt.";
+
+/* No comment provided by engineer. */
+"New person" = "Ny person";
+
+/* No comment provided by engineer. */
+"New user" = "Ny bruker";
+
+/* No comment provided by engineer. */
+"No Internet connection for this device." = "Ingen internet forbindelse for denne enheten.";
+
+/* No comment provided by engineer. */
+"No name selected" = "Må legge inn fornavn";
+
+/* No comment provided by engineer. */
+"Number of persons saved/modified from the Json backup file: %lld" = "Antall personer lagret: \n%lld";
+
+/* No comment provided by engineer. */
+"Number of userRecords saved/modified from the Json backup file: %lld" = "Antall brukere lagret / oppdatert fra Json backup: %lld";
+
+/* No comment provided by engineer. */
+"Number of ZipCode saved: %lld" = "Antall postnummer lagret: %lld";
+
+/* No comment provided by engineer. */
+"OK" = "OK";
+
+/* No comment provided by engineer. */
+"Overview" = "Oversikt";
+
+/* No comment provided by engineer. */
+"Password" = "Passord";
+
+/* No comment provided by engineer. */
+"Person" = "Person";
+
+/* No comment provided by engineer. */
+"Person backup to Json" = "Person backup til Json";
+
+/* No comment provided by engineer. */
+"Person ID" = "Person ID";
+
+/* No comment provided by engineer. */
+"PersonOverView" = "Personer";
+
+/* No comment provided by engineer. */
+"Phonenumber" = "Telefonnummer";
+
+/* No comment provided by engineer. */
+"Press the toggle button for updating..." = "Sett på bryteren for å kunne starte oppdatering av ZipCode tabellen.";
+
+/* No comment provided by engineer. */
+"Refresh" = "Frisk opp";
+
+/* No comment provided by engineer. */
+"Request failed with http status code 503" = "http-statuskode 503. Serveren kan for øyeblikket ikke håndtere forespørselen på grunn av en midlertidig overbelastning eller vedlikehold av serveren.";
+
+/* No comment provided by engineer. */
+"Save" = "Lagre";
+
+/* No comment provided by engineer. */
+"Search firstName" = "Søk";
+
+/* No comment provided by engineer. */
+"Select\nimage" = "Velg\nbilde";
+
+/* No comment provided by engineer. */
+"Select ZipCode" = "Velg postnummer";
+
+/* No comment provided by engineer. */
+"Show mail view" = "Vis e-Post oversikt";
+
+/* No comment provided by engineer. */
+"Sign in CloudKit" = "Logg på CloudKit";
+
+/* No comment provided by engineer. */
+"Sign Up" = "Logg på";
+
+/* No comment provided by engineer. */
+"SignInView" = "Pålogging";
+
+/* No comment provided by engineer. */
+"Store" = "Lagre";
+
+/* No comment provided by engineer. */
+"The Cabin backup to Json is finished." = "Hyttereservasjon backup til Json er ferdig.";
+
+/* No comment provided by engineer. */
+"The cabin has been deleted" = "Hyttereservasjonen er slettet.";
+
+/* No comment provided by engineer. */
+"The cabin has been modified in CloudKit" = "Hyttereservassjonen er oppdatert.";
+
+/* No comment provided by engineer. */
+"The cabin has been saved in CloudKit" = "Hyttereservasjonen er lagret.";
+
+/* No comment provided by engineer. */
+"The Cabin table in CloudKit is still empty.\nTry again in a litte while." = "Hyttereservasjon tabellen er stadig tom.\nPrøv igjen om em en liten stund.";
+
+/* No comment provided by engineer. */
+"The Person backup to Json is finished." = "Ferdig med person backup to Json.";
+
+/* No comment provided by engineer. */
+"The person has been deleted" = "Personen er slettet.";
+
+/* No comment provided by engineer. */
+"The person has been modified in CloudKit" = "Personen er oppdatert.";
+
+/* No comment provided by engineer. */
+"The person has been saved in CloudKit" = "Personen er lagret.";
+
+/* No comment provided by engineer. */
+"The Person table in CloudKit is still empty.\nTry again in a litte while." = "Person tabellen i CloudKit er tom.\nPrøv igjen om en liten stund.";
+
+/* No comment provided by engineer. */
+"The user has been deleted" = "Brukeren er slettet.";
+
+/* No comment provided by engineer. */
+"The user has been modified in CloudKit" = "Brukeren er oppdatert.";
+
+/* No comment provided by engineer. */
+"The userRecord backup to Json is finished." = "Bruker backup til Json er ferdig.";
+
+/* No comment provided by engineer. */
+"The userRecord has been saved in CloudKit" = "Brukeren er lagret.";
+
+/* No comment provided by engineer. */
+"The userRecord table in CloudKit is still empty.\nTry again in a litte while." = "Bruker tabellen i CloudKit er stadig tom.\nPrøv igjen om en liten stund.";
+
+/* No comment provided by engineer. */
+"The zipCode is deleted in CloudKit" = "Postnummeret er slettet i CloudKit.";
+
+/* No comment provided by engineer. */
+"The zipCode is saved in CloudKit" = "Postnummeret er lagret i CloudKit.";
+
+/* No comment provided by engineer. */
+"This person exists in CloudKit " = "Personen finnes allerede i CloudKit.";
+
+/* No comment provided by engineer. */
+"This record was saved earlier" = "Denne hyttereservasjonen finnes allerede.";
+
+/* No comment provided by engineer. */
+"This userRecord exists" = "Denne brukeren finnes fra før.";
+
+/* No comment provided by engineer. */
+"To date" = "Til dato";
+
+/* No comment provided by engineer. */
+"To Json" = "Til Json";
+
+/* No comment provided by engineer. */
+"ToDo" = "Oppgaver i Xcode";
+
+/* No comment provided by engineer. */
+"Unknown json file" = "Ukjent Json fil";
+
+/* No comment provided by engineer. */
+"Unknown Json file" = "Ukjent Json fil";
+
+/* No comment provided by engineer. */
+"Unknown userRecord" = "Ukjent bruker";
+
+/* No comment provided by engineer. */
+"Update" = "Oppdater";
+
+/* No comment provided by engineer. */
+"Update Cabin from Json" = "Hyttereservasjon fra Json";
+
+/* No comment provided by engineer. */
+"Update from Json" = "Oppdater fra Json";
+
+/* No comment provided by engineer. */
+"Update Persons from a Json" = "Oppdater personer fra Json backup";
+
+/* No comment provided by engineer. */
+"Update ZipCode" = "Oppdater postnummer";
+
+/* No comment provided by engineer. */
+"User backup til Json fil" = "Bruker backup til Json fil";
+
+/* No comment provided by engineer. */
+"User Details" = "Bruker detaljer";
+
+/* No comment provided by engineer. */
+"User OverView" = "Brukere";
+
+/* No comment provided by engineer. */
+"UserRecord" = "Bruker";
+
+/* No comment provided by engineer. */
+"UserRecord backup to Json" = "Bruker backup til Json";
+
+/* No comment provided by engineer. */
+"UserRecord update Json" = "Bruker oppdater Json";
+
+/* No comment provided by engineer. */
+"UserRecords" = "Brukere";
+
+/* No comment provided by engineer. */
+"Woman" = "Kvinne";
+
+/* No comment provided by engineer. */
+"You can call the update several times." = "Du kan kjøre oppdatering flere ganger.";
+
+/* No comment provided by engineer. */
+"You can only Update ZipCode when toggle is on." = "Du kan kun oppdatere postnummerne dersom bryteren er på.";
+
+/* No comment provided by engineer. */
+"ZipCode" = "Postnummer";
+

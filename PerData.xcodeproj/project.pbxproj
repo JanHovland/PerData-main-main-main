@@ -29,6 +29,7 @@
 		DB64C033275536A2004709C4 /* IndexedTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64C032275536A2004709C4 /* IndexedTableViewHelper.swift */; };
 		DB64C03727569172004709C4 /* PerDataIndexed.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64C03627569172004709C4 /* PerDataIndexed.swift */; };
 		DB759E162CBD6A9D00DB67E8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB759E152CBD6A8E00DB67E8 /* Extension.swift */; };
+		DB7758062CC23C20007BE940 /* inputDeath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7758052CC23C20007BE940 /* inputDeath.swift */; };
 		DB81CA66274263F700E69D57 /* PersonDetailMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA65274263F700E69D57 /* PersonDetailMapView.swift */; };
 		DB81CA682742665700E69D57 /* PersonDetailPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA672742665700E69D57 /* PersonDetailPhoneView.swift */; };
 		DB81CA6A274272BD00E69D57 /* PersonDetailMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81CA69274272BD00E69D57 /* PersonDetailMessageView.swift */; };
@@ -106,6 +107,7 @@
 		DB64C032275536A2004709C4 /* IndexedTableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexedTableViewHelper.swift; sourceTree = "<group>"; };
 		DB64C03627569172004709C4 /* PerDataIndexed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerDataIndexed.swift; sourceTree = "<group>"; };
 		DB759E152CBD6A8E00DB67E8 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		DB7758052CC23C20007BE940 /* inputDeath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputDeath.swift; sourceTree = "<group>"; };
 		DB81CA65274263F700E69D57 /* PersonDetailMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailMapView.swift; sourceTree = "<group>"; };
 		DB81CA672742665700E69D57 /* PersonDetailPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailPhoneView.swift; sourceTree = "<group>"; };
 		DB81CA69274272BD00E69D57 /* PersonDetailMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailMessageView.swift; sourceTree = "<group>"; };
@@ -176,21 +178,21 @@
 		DB3AA3992737E9B1008B2FDF /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				DBCE88972754CF37006E6E35 /* PersonBackup.json */,
-				DBB366AE274E6CB3001CB47A /* BackupPersonsToJsonBackupFile.swift */,
-				DBB366AC274E6C39001CB47A /* BackupPersonsToJsonBackupFileView.swift */,
-				DB3AA39E27392ED1008B2FDF /* UpdatePersonsFromJsonBackupFile.swift */,
-				DB3AA39C27392D65008B2FDF /* UpdatePersonsFromJsonBackupFileView.swift */,
-				DBCE88952754CE79006E6E35 /* UserRecordBackup.json */,
-				DB0AD8A02751870500A3F8C3 /* BackupUserRecordsToJsonBackupFile.swift */,
-				DB0AD89E275185D600A3F8C3 /* BackupUserRecordsToJsonBackupFileView.swift */,
-				DBB952AE275221AD009A0181 /* UpdateUserRecordsFromJsonBackupFile.swift */,
-				DBB952AC2752216C009A0181 /* UpdateUserRecordsFromJsonBackupFileView.swift */,
-				DBCE88932754C2FB006E6E35 /* CabinBackup.json */,
 				DB975F212753E0F700A6BC4B /* BackupCabinsToJsonBackupFile.swift */,
 				DB975F1F2753E0C000A6BC4B /* BackupCabinsToJsonBackupFileView.swift */,
+				DBB366AE274E6CB3001CB47A /* BackupPersonsToJsonBackupFile.swift */,
+				DBB366AC274E6C39001CB47A /* BackupPersonsToJsonBackupFileView.swift */,
+				DB0AD8A02751870500A3F8C3 /* BackupUserRecordsToJsonBackupFile.swift */,
+				DB0AD89E275185D600A3F8C3 /* BackupUserRecordsToJsonBackupFileView.swift */,
+				DBCE88932754C2FB006E6E35 /* CabinBackup.json */,
+				DBCE88972754CF37006E6E35 /* PersonBackup.json */,
 				DBCE889127541290006E6E35 /* UpdateCabinsFromJsonBackupFile.swift */,
 				DBCE888F2754126C006E6E35 /* UpdateCabinsFromJsonBackupFileView.swift */,
+				DB3AA39E27392ED1008B2FDF /* UpdatePersonsFromJsonBackupFile.swift */,
+				DB3AA39C27392D65008B2FDF /* UpdatePersonsFromJsonBackupFileView.swift */,
+				DBB952AE275221AD009A0181 /* UpdateUserRecordsFromJsonBackupFile.swift */,
+				DBB952AC2752216C009A0181 /* UpdateUserRecordsFromJsonBackupFileView.swift */,
+				DBCE88952754CE79006E6E35 /* UserRecordBackup.json */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -216,18 +218,18 @@
 		DB55163B2727E82600153A9A /* Person */ = {
 			isa = PBXGroup;
 			children = (
-				DB587897275E3634004C4F65 /* PersonBirthdayView.swift */,
-				DB64C03627569172004709C4 /* PerDataIndexed.swift */,
 				DBE25B5C270C556200AE255B /* PerDataApp.swift */,
-				DB55163C2727E84600153A9A /* PersonDetailView.swift */,
-				DB81CA65274263F700E69D57 /* PersonDetailMapView.swift */,
+				DB64C03627569172004709C4 /* PerDataIndexed.swift */,
+				DB587897275E3634004C4F65 /* PersonBirthdayView.swift */,
+				DB81CA742742751900E69D57 /* PersonDetailCabinView.swift */,
 				DB81CA6D274273D300E69D57 /* PersonDetailMailView.swift */,
+				DB81CA65274263F700E69D57 /* PersonDetailMapView.swift */,
 				DB81CA69274272BD00E69D57 /* PersonDetailMessageView.swift */,
 				DB81CA672742665700E69D57 /* PersonDetailPhoneView.swift */,
-				DB81CA742742751900E69D57 /* PersonDetailCabinView.swift */,
+				DB55163C2727E84600153A9A /* PersonDetailView.swift */,
 				DB0708EE27293D66001B3BBA /* PersonNewView.swift */,
-				DB81CA6B2742732000E69D57 /* PersonSendSMS.swift */,
 				DB81CA6F2742742900E69D57 /* PersonSendEmailView.swift */,
+				DB81CA6B2742732000E69D57 /* PersonSendSMS.swift */,
 				DB0708F027293F97001B3BBA /* PersonUpdateView.swift */,
 			);
 			path = Person;
@@ -282,8 +284,8 @@
 				DB81CA80274276FE00E69D57 /* CloudKitCabin.swift */,
 				DB90614B273A826300BF9779 /* CloudKitErrorString.swift */,
 				DB8476DC270EE534007D3E18 /* CloudKitPerson.swift */,
-				DBA02DBF272BEFF90090D36C /* CloudKitZipCode.swift */,
 				DBDF4D652743D00B0019D879 /* CloudKitUserRecord.swift */,
+				DBA02DBF272BEFF90090D36C /* CloudKitZipCode.swift */,
 			);
 			path = CloudKit;
 			sourceTree = "<group>";
@@ -294,8 +296,8 @@
 				DB81CA79274275F100E69D57 /* Cabin.swift */,
 				DB8476E0270F6742007D3E18 /* Person.swift */,
 				DBDF4D692743D2DA0019D879 /* User.swift */,
-				DBA02DBD272BEE510090D36C /* ZipCode.swift */,
 				DBDF4D6B2743D34A0019D879 /* UserRecord.swift */,
+				DBA02DBD272BEE510090D36C /* ZipCode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -319,6 +321,7 @@
 				DBC9041E273FFF740043DAC3 /* MakeAttributedString.swift */,
 				DBDEACAD273663B7003CA322 /* SwiftActivityIndicator.swift */,
 				DB64C032275536A2004709C4 /* IndexedTableViewHelper.swift */,
+				DB7758052CC23C20007BE940 /* inputDeath.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -326,11 +329,11 @@
 		DBA02DCC273070A00090D36C /* Cloud Helper */ = {
 			isa = PBXGroup;
 			children = (
-				DBB4B38427141B9D00618F17 /* CloudPersonHelper.swift */,
-				DBA02DC2272C66200090D36C /* CloudZipCodeHelper.swift */,
-				DB970A47273DF670008F6828 /* cloudkit-development.ckdb */,
 				DB9B09B22742F6B500160195 /* CloudCabinHelper.swift */,
+				DB970A47273DF670008F6828 /* cloudkit-development.ckdb */,
+				DBB4B38427141B9D00618F17 /* CloudPersonHelper.swift */,
 				DBDF4D672743D0480019D879 /* CloudUserHelper.swift */,
+				DBA02DC2272C66200090D36C /* CloudZipCodeHelper.swift */,
 			);
 			path = "Cloud Helper";
 			sourceTree = "<group>";
@@ -443,7 +446,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					DBE25B58270C556200AE255B = {
 						CreatedOnToolsVersion = 13.0;
@@ -501,6 +504,7 @@
 				DBB366AD274E6C39001CB47A /* BackupPersonsToJsonBackupFileView.swift in Sources */,
 				DB0AD89F275185D600A3F8C3 /* BackupUserRecordsToJsonBackupFileView.swift in Sources */,
 				DB64C033275536A2004709C4 /* IndexedTableViewHelper.swift in Sources */,
+				DB7758062CC23C20007BE940 /* inputDeath.swift in Sources */,
 				DB759E162CBD6A9D00DB67E8 /* Extension.swift in Sources */,
 				DB9B09B127428AA000160195 /* CabinOverView.swift in Sources */,
 				DBDF4D662743D00B0019D879 /* CloudKitUserRecord.swift in Sources */,
@@ -585,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -648,6 +653,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

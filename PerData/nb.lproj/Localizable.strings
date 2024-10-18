@@ -11,7 +11,7 @@
 "Add user" = "Lagre";
 
 /* No comment provided by engineer. */
-"Address" = "Adresse";
+"Address" = "Adresse  ";
 
 /* No comment provided by engineer. */
 "All cabins have been deleted" = "Alle hyttereservasjonene er slettet.";
@@ -143,7 +143,7 @@
 "First- and LastName must both have values." = "For- og etternavn må begge ha verdier.";
 
 /* No comment provided by engineer. */
-"FirstName" = "Fornavn";
+"FirstName" = "Fornavn  ";
 
 /* No comment provided by engineer. */
 "From Ascii" = "Fra ascii";
@@ -428,7 +428,7 @@
 "Gender" = "Kjønn";
 
 /* No comment provided by engineer. */
-"Dead" = "Død";
+"Dead" = "Død  ";
 
 /* No comment provided by engineer. */
 "Yes" = "Ja";

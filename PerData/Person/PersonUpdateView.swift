@@ -75,34 +75,47 @@ struct PersonUpdateView: View {
                     ImagePicker(sourceType: .photoLibrary, selectedImage: $image, image: $person.image)
                 })
                 
-                HStack {
-                    InputDeath(heading: String(localized: "Dead"),
-                                death: death,
-                                value: $person.dead)
-                    Spacer()
-                }
-                
                 HStack (spacing: 30) {
                     Text("FirstName")
-                     TextField("FirstName", text: $person.firstName)
-                  Spacer()
+                    TextField("FirstName", text: $person.firstName)
+                    Spacer()
                 }
-                .padding(.bottom, 5)
+                .padding(.leading, 10)
                 
-                HStack (spacing: 20) {
+                HStack (spacing: 30) {
                     Text("LastName")
                     TextField("LastName", text: $person.lastName)
                     Spacer()
                 }
-            
-                TextField("Email", text: $person.personEmail)
-                    .keyboardType(.emailAddress)
-                    .autocapitalization(.none)
-                TextField("Address", text: $person.address)
-                    .autocapitalization(.words)
+                .padding(.leading, 10)
+                
+                /// Returning an integer 0 == "Man" 1 == "Women
+                InputGender(heading: String(localized: "Gender"),
+                            genders: genders,
+                            value: $person.gender)
+                
+                HStack (spacing: 30) {
+                    Text("Email")
+                    TextField("Email", text: $person.personEmail)
+                        .keyboardType(.emailAddress)
+                        .autocapitalization(.none)
+                }
+                .padding(.leading, 10)
+                
+                HStack (spacing: 30) {
+                    Text("Address")
+                    TextField("Address", text: $person.address)
+                        .autocapitalization(.words)
+                }
+                .padding(.leading, 10)
             }
             Group {
-                TextField("Phonenumber", text: $person.phoneNumber)
+                HStack (spacing: 30) {
+                    Text("Phonenumber")
+                    TextField("Phonenumber", text: $person.phoneNumber)
+                }
+                .padding(.leading, 10)
+                
                 HStack (alignment: .center, spacing: 10) {
                     TextField("Citynumber", text: $person.cityNumber)
                         .keyboardType(.numberPad)
@@ -133,6 +146,7 @@ struct PersonUpdateView: View {
                         .autocapitalization(.none)
                         .autocapitalization(.words)
                 }
+                
                 DatePicker(
                     selection: $person.dateOfBirth,
                     // in: ...dato,                  /// Uten in: -> ingen begrensning på datoutvalg
@@ -140,11 +154,13 @@ struct PersonUpdateView: View {
                     label: {
                         Text("Date of birth")
                     })
-                    .padding(.leading, 10)
-                /// Returning an integer 0 == "Man" 1 == "Women
-                InputGender(heading: String(localized: "Gender"),
-                            genders: genders,
-                            value: $person.gender)
+                .padding(.leading, 10)
+                
+                InputDeath(heading: String(localized: "Dead"),
+                           death: death,
+                           value: $person.dead)
+                .padding(.leading, 10)
+                
             }
             Spacer()
         }
@@ -185,13 +201,13 @@ struct PersonUpdateView: View {
                                     title = "Delete a person"
                                     message = "Can not delete a person without a record ID. "
                                     isAlertActive.toggle()
-
+                                    
                                 }
                             }
                         }, label: {
                             Text("Delete")
                         })
-                       
+                        
                     }
             }
         })

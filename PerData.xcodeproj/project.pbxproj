@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -162,6 +162,10 @@
 		DBE25B6C270C55C500AE255B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		DBE25B6E270C566000AE255B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DBD23E552CC39D7A0042CB18 /* Script */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Script; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DBE25B56270C556200AE255B /* Frameworks */ = {
@@ -374,6 +378,7 @@
 		DBE25B5B270C556200AE255B /* PerData */ = {
 			isa = PBXGroup;
 			children = (
+				DBD23E552CC39D7A0042CB18 /* Script */,
 				DB759E142CBD6A7E00DB67E8 /* Extension */,
 				DB01A8312726C05A007721E1 /* Info.plist */,
 				DB01A83E2726C3D1007721E1 /* Localizable.strings */,
@@ -432,6 +437,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DBD23E552CC39D7A0042CB18 /* Script */,
 			);
 			name = PerData;
 			productName = PerData;
